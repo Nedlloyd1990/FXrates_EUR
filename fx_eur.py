@@ -9,7 +9,7 @@ import os
 
 currentDate=datetime.today().strftime('%Y-%m-%d')
 
-currencies = ["XPFEUR=X","XOFEUR=X","XCDEUR=X","XAFEUR=X","VNDEUR=X","SGDEUR=X","UZSEUR=X","UYUEUR=X"]
+currencies = ["SGDEUR=X","USDEUR=X","GBPEUR=X"]
 
 dict1={}
 
