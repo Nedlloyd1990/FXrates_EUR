@@ -9,7 +9,7 @@ from datetime import date
 d = st.date_input("Start Date", date(2019, 7, 6))
 start_d= d.strftime('%Y-%m-%d')
 
-d1 = st.date_input("End Date", today())
+d1 = st.date_input("End Date", datetime.today())
 end_d= d.strftime('%Y-%m-%d')
 
 currencies = []
