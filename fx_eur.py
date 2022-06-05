@@ -4,7 +4,13 @@ from datetime import datetime
 import yfinance as yf
 
 
-currentDate=datetime.today().strftime('%Y-%m-%d')
+
+
+d = st.date_input("Start Date", date(2019, 7, 6))
+start_d= d.strftime('%Y-%m-%d')
+
+d1 = st.date_input("End Date", today())
+end_d= d.strftime('%Y-%m-%d')
 
 currencies = []
 dict1={}
@@ -20,7 +26,7 @@ for i in options:
 
 for ccy in currencies:
 	ccy_pair= yf.Ticker(ccy)
-	ccy_pair_list = ccy_pair.history(start="2021-11-14" ,end=str(currentDate),  interval="1d")
+	ccy_pair_list = ccy_pair.history(start=str(start_d) ,end=str(d1),  interval="1d")
 	dataframe=pd.DataFrame(ccy_pair_list)
 
 	filter2=pd.DataFrame(dataframe).Close
@@ -37,7 +43,6 @@ csv = convert_df(d1)
 
 
 st.dataframe(d1)
-#st.download_button(label='Download Current Result',   data=d1 , file_name= 'df_test.xlsx')
 st.download_button( "Click to Download", csv, "file.csv",  "text/csv",   key='download-csv')
 
 
