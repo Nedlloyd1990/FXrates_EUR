@@ -4,7 +4,7 @@ from datetime import datetime
 import yfinance as yf
 from datetime import date
 
-st.sidebar.write("Historical Currency Conversion Rate-  EUR")
+st.sidebar.write("**Historical Currency Conversion Rate-  EUR**")
 
 d = st.sidebar.date_input("Start Date", date(2005, 1, 1))
 start_d= d.strftime('%Y-%m-%d')
