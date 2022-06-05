@@ -4,7 +4,7 @@ from datetime import datetime
 import yfinance as yf
 from datetime import date
 
-
+st.sidebar.write("Conversion To EUR")
 
 d = st.sidebar.date_input("Start Date", date(2019, 7, 6))
 start_d= d.strftime('%Y-%m-%d')
@@ -22,7 +22,7 @@ options = st.multiselect(
      ["ZAR","CHF","DKK","INR","SEK","SLL","SOS","SZL","THB","TND","TRY","TTD","TZS","UAH","UGX","UYU","UZS","SGD","VND","XAF","CAD","USD","GBP"])
 
 for i in options:
-    currencies.append(i + "USD=X")
+    currencies.append(i + "EUR=X")
 
 for ccy in currencies:
 	ccy_pair= yf.Ticker(ccy)
