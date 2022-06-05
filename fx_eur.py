@@ -6,10 +6,10 @@ from datetime import date
 
 
 
-d = st.date_input("Start Date", date(2019, 7, 6))
+d = st.sidebar.date_input("Start Date", date(2019, 7, 6))
 start_d= d.strftime('%Y-%m-%d')
 
-d1 = st.date_input("End Date", datetime.today())
+d1 = st.sidebar.date_input("End Date", datetime.today())
 end_d= d.strftime('%Y-%m-%d')
 
 currencies = []
