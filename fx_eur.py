@@ -4,9 +4,9 @@ from datetime import datetime
 import yfinance as yf
 from datetime import date
 
-st.sidebar.write("Conversion To EUR")
+st.sidebar.write("Historical Currency Conversion Rate-  EUR")
 
-d = st.sidebar.date_input("Start Date", date(2019, 7, 6))
+d = st.sidebar.date_input("Start Date", date(2005, 1, 1))
 start_d= d.strftime('%Y-%m-%d')
 
 d1 = st.sidebar.date_input("End Date", datetime.today())
@@ -18,7 +18,7 @@ dict1={}
 
 options = st.multiselect(
      'Enter New Currency',
-     ["ZMW","YER","VND","VED","VES","VUV","UZS","UYU","AED","UAH","UGX","TMT","TND","TTD","TOP","THB","TZS","TJS","TWD","SYP","SEK","SRD","SDG","LKR","SSP","SOS","SBD","SLL","SCR","RSD","SAR","STN","WST","RWF","RON","QAR","PLN","PHP","PEN","PYG","PGK","PAB","PKR","OMR","NOK","TRY","MKD","NGN","NIO","NPR","NAD","MMK","MZN","MAD","MNT","MDL","MXN","MUR","MRU","MVR","MYR","MWK","MGA","MOP","CHF","LYD","LRD","LSL","LBP","LAK","KGS","KWD","KRW","KPW","KES","KZT","JOD","JPY","JMD","ILS","IQD","IRR","IDR","ISK","HUF","HKD","HNL","HTG","GYD","GNF","GTQ","GIP","GHS","GEL","GMD","XPF","FJD","FKP","ETB","ZAR","SZL","ERN","EGP","DOP","DJF","DKK","CZK","ANG","CUP","HRK","CRC","NZD","CDF","KMF","COP","CNY","CLP","KYD","CVE","CAD","XAF","KHR","BIF","BGN","SGD","BND","BRL","BWP","BAM","USD","BOB","INR","BTN","BMD","XOF","BZD","BYN","BBD","BDT","BHD","BSD","AZN","AUD","SHP","AWG","AMD","ARS","XCD","AOA","DZD","GBP","EUR","AFN","RUB"],
+     ["AFN","AOA","AMD","SHP","AZN","BYN","BMD","BTN","USD","BAM","BRL","KYD","CDF","ANG","ERN","FKP","FJD","GEL","GHS","GIP","GYD","IRR","KPW","KGS","LRD","MRU","MNT","MZN","RON","WST","STN","RSD","SBD","SSP","SDG","SRD","SYP","TJS","TOP","TMT","VUV","VES","VED","ZMW","ZAR","YER","XPF","XCD","XAF","VND","SGD","UZS","UYU","UGX","UAH","TZS","TTD","TRY","TND","THB","SZL","SOS","SLL","SEK","SCR","SAR","RWF","RUB","QAR","PYG","PLN","PKR","PHP","PGK","PEN","PAB","OMR","NZD","NPR","NOK","NIO","NGN","NAD","MYR","MXN","MWK","MVR","MUR","MOP","MMK","MKD","MGA","MDL","MAD","LYD","LSL","LKR","LBP","LAK","KZT","KWD","KRW","KMF","KHR","KES","JPY","JOD","JMD","ISK","IQD","INR","ILS","IDR","HUF","HTG","HRK","HNL","HKD","GTQ","GNF","GMD","GBP","EUR","ETB","EGP","DZD","DOP","DKK","DJF","CZK","CVE","CUP","CRC","COP","CNY","CLP","CHF","CAD","BZD","BWP","BSD","BOB","BND","BIF","BHD","BGN","BDT","BBD","AWG","AUD","ARS","ALL","AED","TWD","XOF"],
      ["ZAR","CHF","DKK","INR","SEK","SLL","SOS","SZL","THB","TND","TRY","TTD","TZS","UAH","UGX","UYU","UZS","SGD","VND","XAF","CAD","USD","GBP"])
 
 for i in options:
