@@ -16,7 +16,7 @@ currencies = []
 dict1={}
 
 
-options = st.sidebar.multiselect(
+options = st.multiselect(
      'Enter New Currency',
      ["ZMW","YER","VND","VED","VES","VUV","UZS","UYU","AED","UAH","UGX","TMT","TND","TTD","TOP","THB","TZS","TJS","TWD","SYP","SEK","SRD","SDG","LKR","SSP","SOS","SBD","SLL","SCR","RSD","SAR","STN","WST","RWF","RON","QAR","PLN","PHP","PEN","PYG","PGK","PAB","PKR","OMR","NOK","TRY","MKD","NGN","NIO","NPR","NAD","MMK","MZN","MAD","MNT","MDL","MXN","MUR","MRU","MVR","MYR","MWK","MGA","MOP","CHF","LYD","LRD","LSL","LBP","LAK","KGS","KWD","KRW","KPW","KES","KZT","JOD","JPY","JMD","ILS","IQD","IRR","IDR","ISK","HUF","HKD","HNL","HTG","GYD","GNF","GTQ","GIP","GHS","GEL","GMD","XPF","FJD","FKP","ETB","ZAR","SZL","ERN","EGP","DOP","DJF","DKK","CZK","ANG","CUP","HRK","CRC","NZD","CDF","KMF","COP","CNY","CLP","KYD","CVE","CAD","XAF","KHR","BIF","BGN","SGD","BND","BRL","BWP","BAM","USD","BOB","INR","BTN","BMD","XOF","BZD","BYN","BBD","BDT","BHD","BSD","AZN","AUD","SHP","AWG","AMD","ARS","XCD","AOA","DZD","GBP","EUR","AFN","RUB"],
      ["ZAR","CHF","DKK","INR","SEK","SLL","SOS","SZL","THB","TND","TRY","TTD","TZS","UAH","UGX","UYU","UZS","SGD","VND","XAF","CAD","USD","GBP"])
