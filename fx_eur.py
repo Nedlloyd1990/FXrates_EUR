@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 import yfinance as yf
-
+from datetime import date
 
 
 
